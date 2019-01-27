@@ -41,9 +41,11 @@ adjusting the parameters consistantly until  the error approaches to __"ZERO"__.
 # Image classification
 
 * It is rather trivial task for human to classify or detect the image object in this world.
+
 * What computer sees from an image???
-  * A large set of pixel data or __Matrix__ so to speak, for example, an image of pixel size 1280\*720 which means the image is stored as 1280\*720 matrix, each pixel is consist of __"R, G , B"__ channels value between 0 to 255 respectively.
+  * A large set of pixel data or __Matrix__ so to speak, for example, an image of pixel size 1,280\*720 which means the image is stored as 1,280\*720 matrix, each pixel is consist of __"R, G , B"__ channels value between 0 to 255 respectively.
   * Image is represented as __"H * W * C"__, height, width and color channel.
+
 * Image classification challenge
   * There are many issues to cause the wrong prediction
     * Different angle of view
@@ -53,4 +55,21 @@ adjusting the parameters consistantly until  the error approaches to __"ZERO"__.
     * Brightness
     * Background 
     * Multiple Sub-Class differences
+  * Semantic gap
+    * Computer cannot acquire the true meaning of what or how the object is from the low level visual features which is quite a bit different from human understanding since we tend to view this world base on the experience of lives. 
+    * This causes the big __semantic gap__ between __semantic similarity and visual similarity__, in another words, the visual data doesn't contain any kind of semantic information, it is very much difficult for machine to extract the exact meaning from the pixel data.
+  * Data driven methodology
+    * What is data driven methodology??? It is the special why belonging to machine learning which is quite different from other technic such as ordering algorithm that is hard-coded for everything.
+    * Instead, the data driven methodology mimic the way how baby learns this world in which we __first feed the machine tons of visual data such as images or videos, second put the specific machine learning algorithm on it and let the computer to figure out how and when to determine what is the object by itself based on the appropriate features which is in the critical position to express the object.__
 
+* MNIST data set intro
+
+  * What is MNIST ??? It is a data set for hand-written image which is very famous in image classification training, _Geoffrey Hinton_ and _Yann LeCun_ implement the __cnn__ on it. It was originally not as good as __SVM__ until _ImageNet_ which makes __cnn__ becoming popular.
+
+  * 250 different hand-written numbers which consist of data come from 50% of the students and 50% of the common workers and the testing data set works the same way. You can download it from [MNIST](http://yann.lecun.com/exdb/mnist). 
+
+  * It includes 60,000 samples for training and 10,000 for testing, each image is of 28*28 gray scale image with each pixel a gray value. For example:
+
+    ![MNIST example](./MNIST.png).
+
+  * Other than MNIST, you can also search information such as __"CIFAR-10, CIFAR-100, ImageNet"__, especial __[ImageNet](http://www.image-net.org/)__
