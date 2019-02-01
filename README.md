@@ -4,4 +4,4 @@
 ----
 References:
 * https://wiki.tum.de/display/lfdv/Deep+Residual+Networks#DeepResidualNetworks-PlainNetworks
-
+* <<卷积神经网络的Ｐython实现>>  -- 单建华(中国工信出版集团)
